@@ -7,9 +7,9 @@ import (
 	"net/http"
 )
 
-func routeWithoutMiddleWare() [][3]interface{} {
+func routeWithoutMiddleWare() []Routes {
 	//请求类型，请求url，请求方法
-	return [][3]interface{}{
+	return []Routes{
 		{http.MethodGet, "swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler)},
 		{http.MethodGet, "address/list", ctrl.address.List},
 		{http.MethodPost, "address/add", ctrl.address.Add},
@@ -17,7 +17,5 @@ func routeWithoutMiddleWare() [][3]interface{} {
 		{http.MethodPost, "address/del", ctrl.address.Del},
 		{http.MethodPost, "user/register", ctrl.user.Register},
 		{http.MethodPost, "user/login", ctrl.user.Login},
-		{http.MethodGet, "user/wechat/login", ctrl.wechat.WechatLogin},
-		{http.MethodPost, "ft/changeagepic", ctrl.ft.ChangeAgePic},
 	}
 }

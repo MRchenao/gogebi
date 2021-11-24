@@ -10,17 +10,23 @@ import (
 var ctrl struct {
 	address Api.Address
 	user    Api.User
-	wechat  Api.Wechat
-	ft  Api.Ft
 }
+
+
+type Routes struct {
+	Method     string
+	Url        string
+	Controller gin.HandlerFunc
+}
+
 
 type AuthMiddleWareRoute struct {
 	MiddleWares []gin.HandlerFunc
-	Uris        [][3]interface{}
+	Uris        []Routes
 }
 
 //无需验证的路由
-func ApiRouters() [][3]interface{} {
+func ApiRouters() []Routes{
 	return routeWithoutMiddleWare()
 }
 
@@ -28,6 +34,5 @@ func ApiRouters() [][3]interface{} {
 func AuthRouters() []AuthMiddleWareRoute {
 	return []AuthMiddleWareRoute{
 		{MiddleWares: []gin.HandlerFunc{Middleware.Auth()}, Uris: authMiddleWareRoutes()},
-		{MiddleWares: []gin.HandlerFunc{Middleware.Wechat()}, Uris: wechatMiddleWareRoutes()},
 	}
 }

@@ -126,11 +126,11 @@ func uriString(url string) string {
 }
 
 //路由派发
-func routing(router *gin.RouterGroup, routes [][3]interface{}) {
+func routing(router *gin.RouterGroup, routes []routes.Routes) {
 	for _, item := range routes {
-		uri := uriString(item[1].(string))
-		handler := getRouteTypeFunc(item[2])
-		switch item[0] {
+		uri := uriString(item.Url)
+		handler := getRouteTypeFunc(item.Controller)
+		switch item.Method {
 		case http.MethodGet:
 			router.GET(uri, handler)
 		case http.MethodDelete:

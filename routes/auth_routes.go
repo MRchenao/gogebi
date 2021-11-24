@@ -2,8 +2,8 @@ package routes
 
 import "net/http"
 
-func authMiddleWareRoutes() [][3]interface{} {
-	return [][3]interface{}{
+func authMiddleWareRoutes() []Routes {
+	return []Routes{
 		{http.MethodGet, "user/me", ctrl.user.UserMe},
 	}
 }

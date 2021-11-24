@@ -9,7 +9,6 @@ import (
 )
 
 var userRepo = Repositories.UserRepository{}
-var wechatRepo = Repositories.WechatRepository{}
 
 // CurrentUser 获取当前用户
 func CurrentUser(c *gin.Context) Models.Users {
@@ -19,16 +18,6 @@ func CurrentUser(c *gin.Context) Models.Users {
 	}
 
 	return userRepo.GetById(int(uid.(float64)))
-}
-
-//获取当前的微信用户
-func CurrentWechatUser(c *gin.Context) Models.WechatUser {
-	uid, _ := c.Get("wechat_uid")
-	if uid == nil {
-		Serializer.Err(200, "微信用户不存在", nil)
-	}
-
-	return wechatRepo.GetById(int(uid.(float64)))
 }
 
 // ErrorResponse 返回错误消息
