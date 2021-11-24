@@ -1,0 +1,13 @@
+{
+  "log": {
+    "logpath": "./storage/logs/"
+  },
+  "tencent_cloud": {
+    "credential": {
+      "secretId": "AKID2Tu7i8O7GH2ZqHoQAdeOSHpCqFYj9uvf",
+      "secretKey": "nL7f0iAOMs8evwwhFdsrY4DNHxQg065W",
+    }
+  }
+}
+
+

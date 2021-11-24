@@ -1,0 +1,18 @@
+syntax = "proto3"; //版本
+
+package proto;
+
+option go_package = "./hello";//自定义生成的包名
+
+service Greeter {//定义service
+  rpc SayHello(HelloRequest)returns(HelloReply){}
+  rpc SayHelloAgain(HelloRequest) returns(HelloReply){}
+}
+
+message HelloRequest{//定义请求
+  string name = 1;
+}
+
+message HelloReply{//定义返回
+  string message = 1;
+}

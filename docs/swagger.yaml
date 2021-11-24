@@ -1,0 +1,119 @@
+definitions:
+  Serializer.Response:
+    properties:
+      code:
+        type: integer
+      data: {}
+      error:
+        type: string
+      msg:
+        type: string
+    type: object
+  Services.FtChangeAgePicService:
+    properties:
+      age:
+        type: integer
+      image:
+        type: string
+    required:
+    - age
+    - image
+    type: object
+  Services.UsersLoginService:
+    properties:
+      name:
+        type: string
+      password:
+        type: string
+    required:
+    - name
+    - password
+    type: object
+  Services.UsersRegisterService:
+    properties:
+      age:
+        type: integer
+      birthday:
+        type: string
+      confirmpassword:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+    required:
+    - confirmpassword
+    - name
+    - password
+    type: object
+info:
+  contact: {}
+paths:
+  /go/ft/changeagepic:
+    post:
+      description: 人脸年龄变化
+      parameters:
+      - description: age infos
+        in: body
+        name: age_infos
+        required: true
+        schema:
+          $ref: '#/definitions/Services.FtChangeAgePicService'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Serializer.Response'
+      tags:
+      - ft
+  /user/login:
+    post:
+      description: user login
+      parameters:
+      - description: user info
+        in: body
+        name: user_info
+        required: true
+        schema:
+          $ref: '#/definitions/Services.UsersLoginService'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Serializer.Response'
+      tags:
+      - user
+  /user/me:
+    get:
+      description: user me
+      parameters:
+      - description: Authorization
+        in: header
+        name: Authorization
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Serializer.Response'
+      tags:
+      - user
+  /user/register:
+    post:
+      description: user register
+      parameters:
+      - description: user info
+        in: body
+        name: user_info
+        required: true
+        schema:
+          $ref: '#/definitions/Services.UsersRegisterService'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Serializer.Response'
+      tags:
+      - user
+swagger: "2.0"
