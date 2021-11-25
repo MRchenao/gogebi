@@ -7,9 +7,9 @@ import (
 	"net/http"
 )
 
-func routeWithoutMiddleWare() []Routes {
+func routeWithoutMiddleWare() *[]Routes {
 	//请求类型，请求url，请求方法
-	return []Routes{
+	return &[]Routes{
 		{http.MethodGet, "swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler)},
 		{http.MethodGet, "address/list", ctrl.address.List},
 		{http.MethodPost, "address/add", ctrl.address.Add},
