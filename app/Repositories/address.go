@@ -15,7 +15,7 @@ var addressModel = Models.Address{}
 func (r AddressRepository) GetList(wheres interface{}) []Models.Address {
 	var list []Models.Address
 
-	if err := Build.BuildQueryList(wheres, []string{"*"}, "id desc").Find(&list).Error; err != nil {
+	if err := Build.BuildQueryList(wheres, Build.SetOrderBy("id desc")).Find(&list).Error; err != nil {
 		Serializer.DBErr("address list error:", err)
 	}
 

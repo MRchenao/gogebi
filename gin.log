@@ -70,3 +70,193 @@
 [GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
 [GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
 [GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+127.0.0.1 - [Thu, 02 Dec 2021 17:08:27 CST] "GET /go/address/list HTTP/1.1 200 52.0029ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:08:28 CST] "GET /favicon.ico HTTP/1.1 404 0s "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+127.0.0.1 - [Thu, 02 Dec 2021 17:13:45 CST] "GET /go/address/list HTTP/1.1 200 25.0014ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:13:45 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:13:59 CST] "GET /go/address/list HTTP/1.1 200 1ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:42 CST] "GET /go/address/list HTTP/1.1 200 11.0007ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:43 CST] "GET /go/address/list HTTP/1.1 200 2.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:43 CST] "GET /go/address/list HTTP/1.1 200 1ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:44 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:44 CST] "GET /go/address/list HTTP/1.1 200 4.0002ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:44 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:15:44 CST] "GET /go/address/list HTTP/1.1 200 0s "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:13 CST] "GET /go/address/list HTTP/1.1 200 4.0002ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:15 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:15 CST] "GET /go/address/list HTTP/1.1 200 2.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:16 CST] "GET /go/address/list HTTP/1.1 200 0s "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:23 CST] "GET /go/address/list HTTP/1.1 200 2.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:23 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:24 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:24 CST] "GET /go/address/list HTTP/1.1 200 1.0001ms "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:24 CST] "GET /go/address/list HTTP/1.1 200 0s "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+127.0.0.1 - [Thu, 02 Dec 2021 17:16:24 CST] "GET /go/address/list HTTP/1.1 200 0s "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" "
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /go/swagger/*any          --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /go/address/list          --> gebi/app/Http/Controllers/Api.Address.List-fm (4 handlers)
+[GIN-debug] POST   /go/address/add           --> gebi/app/Http/Controllers/Api.Address.Add-fm (4 handlers)
+[GIN-debug] POST   /go/address/update        --> gebi/app/Http/Controllers/Api.(*Address).Update-fm (4 handlers)
+[GIN-debug] POST   /go/address/del           --> gebi/app/Http/Controllers/Api.(*Address).Del-fm (4 handlers)
+[GIN-debug] POST   /go/user/register         --> gebi/app/Http/Controllers/Api.User.Register-fm (4 handlers)
+[GIN-debug] POST   /go/user/login            --> gebi/app/Http/Controllers/Api.User.Login-fm (4 handlers)
+[GIN-debug] GET    /go/user/me               --> gebi/app/Http/Controllers/Api.User.UserMe-fm (5 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/gin-contrib/pprof.pprofHandler.func1 (4 handlers)

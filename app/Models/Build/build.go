@@ -10,6 +10,30 @@ import (
 	"strings"
 )
 
+type OptionFunc func(*QueryParams)
+
+type QueryParams struct {
+	Columns []string
+	OrderBy string
+}
+
+var defaultQueryParmas = QueryParams{
+	Columns: []string{"*"},
+	OrderBy: "",
+}
+
+func SetColumns(columns []string) OptionFunc {
+	return func(q *QueryParams) {
+		q.Columns = columns
+	}
+}
+
+func SetOrderBy(order string) OptionFunc {
+	return func(q *QueryParams) {
+		q.OrderBy = order
+	}
+}
+
 // BuildWhere 构建where条件
 //1、and 条件 where := []interface{}{
 //    []interface{}{"id", "=", 1},
@@ -104,13 +128,18 @@ func BuildWhere(db *gorm.DB, where interface{}) *gorm.DB {
 	return db
 }
 
-//分页list查询
-func BuildQueryList(wheres interface{}, columns interface{}, orderBy interface{}) *gorm.DB {
-	//var err error
-	db := BuildWhere(database.DB, wheres).Select(columns)
+//分页list查询,默认查询column [*] , 默认排序 ''
+func BuildQueryList(wheres interface{}, opts ...OptionFunc) *gorm.DB {
+	opt := defaultQueryParmas
+	for _, o := range opts {
+		o(&opt)
+	}
 
-	if orderBy != nil && orderBy != "" {
-		db = db.Order(orderBy)
+	//var err error
+	db := BuildWhere(database.DB, wheres).Select(opt.Columns)
+
+	if opt.OrderBy != "" {
+		db = db.Order(opt.OrderBy)
 	}
 
 	db = db.Limit(Middleware.Limit).Offset((Middleware.Page - 1) * Middleware.Limit)
