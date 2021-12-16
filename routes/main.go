@@ -20,17 +20,17 @@ type Routes struct {
 
 type AuthMiddleWareRoute struct {
 	MiddleWares []gin.HandlerFunc
-	Uris        *[]Routes
+	Uris        []Routes
 }
 
 //无需验证的路由
-func ApiRouters() *[]Routes {
+func ApiRouters() []Routes {
 	return routeWithoutMiddleWare()
 }
 
 //需要中间件验证的路由
-func AuthRouters() *[]AuthMiddleWareRoute {
-	return &[]AuthMiddleWareRoute{
+func AuthRouters() []AuthMiddleWareRoute {
+	return []AuthMiddleWareRoute{
 		{MiddleWares: []gin.HandlerFunc{Middleware.Auth()}, Uris: authMiddleWareRoutes()},
 	}
 }

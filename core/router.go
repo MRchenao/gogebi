@@ -91,9 +91,9 @@ func logFormatter() gin.HandlerFunc {
 }
 
 //权限路由
-func authRouting(router *gin.RouterGroup, middleRoutes *[]routes.AuthMiddleWareRoute) {
-	r := make([]*gin.RouterGroup, len(*middleRoutes))
-	for index, item := range *middleRoutes {
+func authRouting(router *gin.RouterGroup, middleRoutes []routes.AuthMiddleWareRoute) {
+	r := make([]*gin.RouterGroup, len(middleRoutes))
+	for index, item := range middleRoutes {
 		r[index] = router.Group("")
 		for _, authorized := range item.MiddleWares {
 			r[index].Use(authorized)
@@ -126,8 +126,8 @@ func uriString(url string) string {
 }
 
 //路由派发
-func routing(router *gin.RouterGroup, routes *[]routes.Routes) {
-	for _, item := range *routes {
+func routing(router *gin.RouterGroup, routes []routes.Routes) {
+	for _, item := range routes {
 		uri := uriString(item.Url)
 		handler := getRouteTypeFunc(item.Controller)
 		switch item.Method {
